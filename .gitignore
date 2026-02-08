@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+*.sqlite
+*.sqlite3
+.arch-review-cache/
+.arch-review-web-output/
+output/
+coverage/
+*.log
+.DS_Store
