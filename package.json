@@ -1,0 +1,43 @@
+{
+  "name": "arch-reviewer-ai",
+  "version": "0.1.0",
+  "description": "AI-powered software architecture reviewer: analyzes a codebase and evaluates the impact of a proposed feature change using Google Gemini.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "bin": {
+    "arch-review": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/cli/index.ts",
+    "web": "tsx src/cli/index.ts web",
+    "build": "tsc -p tsconfig.json && node scripts/copy-web-assets.mjs",
+    "start": "node dist/cli/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "better-sqlite3": "^11.3.0",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "fast-glob": "^3.3.2",
+    "ignore": "^5.3.2",
+    "ts-morph": "^23.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.0",
+    "@types/supertest": "^6.0.2",
+    "supertest": "^7.0.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
+  },
+  "engines": {
+    "node": ">=20.11.0"
+  }
+}
