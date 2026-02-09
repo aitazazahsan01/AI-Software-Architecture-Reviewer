@@ -1,4 +1,3 @@
-// WIP: Initial module design - vitest.setup.ts
 import { afterEach, beforeEach } from 'vitest';
 
 /**
