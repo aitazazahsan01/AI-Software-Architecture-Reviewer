@@ -1,4 +1,3 @@
-// WIP: Initial module design - index.ts
 /**
  * Shared data contracts between all modules. Every module (ingestion,
  * dependency-graph, rag, llm, diagrams, report) reads/writes these shapes.
