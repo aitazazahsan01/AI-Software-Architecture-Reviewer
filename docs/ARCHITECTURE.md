@@ -1,5 +1,3 @@
-# WIP: Draft version of ARCHITECTURE.md
-
 # Architecture
 
 ## Goal
