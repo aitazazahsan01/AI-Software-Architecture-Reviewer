@@ -1,5 +1,3 @@
-# WIP: Draft version of SETUP.md
-
 # Setup
 
 ## Prerequisites
