@@ -1,4 +1,3 @@
-// WIP: Initial module design - gemini-retry.ts
 import { GoogleGenerativeAIError, GoogleGenerativeAIFetchError } from '@google/generative-ai';
 
 /**
