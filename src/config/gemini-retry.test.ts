@@ -1,4 +1,3 @@
-// WIP: Initial module design - gemini-retry.test.ts
 import { GoogleGenerativeAIError, GoogleGenerativeAIFetchError } from '@google/generative-ai';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { isRetryableGeminiError, withGeminiRetry } from './gemini-retry.js';
