@@ -1,4 +1,3 @@
-// WIP: Initial module design - index.ts
 import 'dotenv/config';
 
 // `||` (not `??`) so an empty-string override (e.g. a blank GEMINI_MODEL= left
