@@ -1,4 +1,3 @@
-// WIP: Initial module design - language.ts
 import path from 'node:path';
 import type { Language } from '../types/index.js';
 
