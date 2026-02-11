@@ -1,4 +1,3 @@
-// WIP: Initial module design - chunk.ts
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import type { CodeChunk, RepoInventory } from '../types/index.js';
