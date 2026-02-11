@@ -1,4 +1,3 @@
-// WIP: Initial module design - scan.ts
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
 import fg from 'fast-glob';
