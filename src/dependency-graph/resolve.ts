@@ -1,4 +1,3 @@
-// WIP: Initial module design - resolve.ts
 import path from 'node:path';
 
 const RESOLVE_EXTENSIONS = ['', '.ts', '.tsx', '.js', '.jsx', '.mjs', '.cjs', '.mts', '.cts'];
