@@ -1,4 +1,3 @@
-// WIP: Initial module design - graph.ts
 import { Project, SyntaxKind } from 'ts-morph';
 import type { DependencyEdge, DependencyGraph, DependencyNode, FileInfo, RepoInventory } from '../types/index.js';
 import { isRelativeSpecifier, resolveRelativeSpecifier } from './resolve.js';
