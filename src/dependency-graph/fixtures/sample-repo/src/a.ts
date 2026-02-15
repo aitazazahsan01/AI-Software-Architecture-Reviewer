@@ -1,4 +1,3 @@
-// WIP: Initial module design - a.ts
 import { helperB } from './b';
 import { z } from 'zod';
 
