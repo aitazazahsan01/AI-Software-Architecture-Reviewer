@@ -1,4 +1,3 @@
-// WIP: Initial module design - fastify-server.js
 import Fastify from 'fastify';
 
 const fastify = Fastify();
