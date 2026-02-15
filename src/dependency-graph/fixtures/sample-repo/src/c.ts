@@ -1,4 +1,3 @@
-// WIP: Initial module design - c.ts
 export function helperC(): string {
   return 'c';
 }
