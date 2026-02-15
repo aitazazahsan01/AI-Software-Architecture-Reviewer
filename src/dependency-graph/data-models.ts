@@ -1,4 +1,3 @@
-// WIP: Initial module design - data-models.ts
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import type { DataModel, RepoInventory } from '../types/index.js';
