@@ -1,4 +1,3 @@
-// WIP: Initial module design - product.model.js
 import { DataTypes } from 'sequelize';
 import { sequelize } from '../db.js';
 
