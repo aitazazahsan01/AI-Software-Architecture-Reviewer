@@ -1,4 +1,3 @@
-// WIP: Initial module design - api-endpoints.ts
 import { readFileSync } from 'node:fs';
 import type { ApiEndpoint, RepoInventory } from '../types/index.js';
 
