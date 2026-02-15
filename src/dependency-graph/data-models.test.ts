@@ -1,4 +1,3 @@
-// WIP: Initial module design - data-models.test.ts
 import { describe, expect, it, beforeAll } from 'vitest';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
