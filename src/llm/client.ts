@@ -1,4 +1,3 @@
-// WIP: Initial module design - client.ts
 /**
  * Gemini client wiring + JSON parse/validate/retry logic for
  * `generateImpactReport`.
