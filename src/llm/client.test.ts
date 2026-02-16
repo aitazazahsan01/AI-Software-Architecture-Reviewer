@@ -1,4 +1,3 @@
-// WIP: Initial module design - client.test.ts
 import { GoogleGenerativeAIError } from '@google/generative-ai';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import type { ArchitectureInventory, ChangeProposal, RetrievalResult } from '../types/index.js';
