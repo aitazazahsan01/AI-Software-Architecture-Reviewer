@@ -1,4 +1,3 @@
-// WIP: Initial module design - schema.ts
 /**
  * Zod schema mirroring `ArchitectureImpactReport` from src/types/index.ts.
  * Used to validate Gemini's JSON response before it's trusted by the rest of
