@@ -1,4 +1,3 @@
-// WIP: Initial module design - prompt.ts
 /**
  * Prompt construction for `generateImpactReport`. Deliberately does NOT dump
  * the full dependency graph (can be hundreds/thousands of nodes+edges) into
