@@ -1,4 +1,3 @@
-// WIP: Initial module design - embed.test.ts
 import { GoogleGenerativeAIFetchError } from '@google/generative-ai';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { EMBEDDING_BATCH_SIZE, EMBEDDING_DIMENSIONS, embedTexts, type EmbeddingClient } from './embed.js';
