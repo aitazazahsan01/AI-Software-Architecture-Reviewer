@@ -1,4 +1,3 @@
-// WIP: Initial module design - embed.ts
 /**
  * Thin wrapper around Gemini's embedding endpoint (`gemini-embedding-001` by
  * default, see `GEMINI_EMBEDDING_MODEL`). Note: this model does not support
