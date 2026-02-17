@@ -1,4 +1,3 @@
-// WIP: Initial module design - store.ts
 /**
  * Local vector store backed by `better-sqlite3` (a single file on disk, no
  * server) with cosine similarity computed in JS. See docs/ARCHITECTURE.md —
