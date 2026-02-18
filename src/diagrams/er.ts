@@ -1,4 +1,3 @@
-// WIP: Initial module design - er.ts
 import type {
   ArchitectureImpactReport,
   ArchitectureInventory,
