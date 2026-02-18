@@ -1,4 +1,3 @@
-// WIP: Initial module design - diagrams.test.ts
 import { describe, expect, it } from 'vitest';
 import { generateDiagrams } from './index.js';
 import { isBalanced, validateMermaid } from './mermaidUtils.js';
