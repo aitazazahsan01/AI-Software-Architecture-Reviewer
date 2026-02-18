@@ -1,4 +1,3 @@
-// WIP: Initial module design - flowchart.ts
 import path from 'node:path';
 import type {
   ArchitectureImpactReport,
