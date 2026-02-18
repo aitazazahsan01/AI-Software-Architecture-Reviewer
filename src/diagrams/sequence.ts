@@ -1,4 +1,3 @@
-// WIP: Initial module design - sequence.ts
 import type { ArchitectureImpactReport } from '../types/index.js';
 import { escapeLabel, truncate } from './mermaidUtils.js';
 
