@@ -1,4 +1,3 @@
-// WIP: Initial module design - index.ts
 // Implemented by: diagrams + report agent.
 // See docs/ARCHITECTURE.md "Module Contracts" for the required export:
 //   generateDiagrams(inventory: ArchitectureInventory, report: ArchitectureImpactReport): DiagramSet
