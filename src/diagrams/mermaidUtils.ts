@@ -1,4 +1,3 @@
-// WIP: Initial module design - mermaidUtils.ts
 /**
  * Small, dependency-free helpers for generating and sanity-checking Mermaid
  * source strings. Kept separate from the diagram builders so both the
