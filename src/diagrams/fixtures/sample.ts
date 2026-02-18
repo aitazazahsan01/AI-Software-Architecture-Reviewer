@@ -1,4 +1,3 @@
-// WIP: Initial module design - sample.ts
 /**
  * Small, hand-crafted fixtures shared by the diagrams and report tests.
  * Deliberately tiny (a handful of files, one endpoint, one data model) but
