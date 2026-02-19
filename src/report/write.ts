@@ -1,4 +1,3 @@
-// WIP: Initial module design - write.ts
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
