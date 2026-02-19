@@ -1,4 +1,3 @@
-// WIP: Initial module design - markdown.ts
 import type { AnalysisResult, Severity } from '../types/index.js';
 
 function severityBadge(sev: Severity): string {
