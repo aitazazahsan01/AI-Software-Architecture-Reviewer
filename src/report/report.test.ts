@@ -1,4 +1,3 @@
-// WIP: Initial module design - report.test.ts
 import { describe, expect, it } from 'vitest';
 import { mkdtemp, readFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
