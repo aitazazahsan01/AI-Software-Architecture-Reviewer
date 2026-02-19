@@ -1,4 +1,3 @@
-// WIP: Initial module design - index.ts
 // Implemented by: diagrams + report agent.
 // See docs/ARCHITECTURE.md "Module Contracts" for the required exports:
 //   renderMarkdownReport(result: AnalysisResult): string
