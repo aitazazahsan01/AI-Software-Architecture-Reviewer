@@ -1,4 +1,3 @@
-// WIP: Initial module design - html.ts
 import type { DiagramSet } from '../types/index.js';
 
 // Pinned Mermaid version served from jsdelivr — matches the CDN choice documented
