@@ -1,4 +1,3 @@
-// WIP: Initial module design - index.ts
 #!/usr/bin/env node
 import { Command } from 'commander';
 import { runAnalyze } from './analyze.js';
