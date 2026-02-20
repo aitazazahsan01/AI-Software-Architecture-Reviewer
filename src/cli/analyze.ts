@@ -1,4 +1,3 @@
-// WIP: Initial module design - analyze.ts
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { scanRepo, chunkFiles } from '../ingestion/index.js';
