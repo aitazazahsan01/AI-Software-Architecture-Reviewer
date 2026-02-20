@@ -1,4 +1,3 @@
-// WIP: Initial module design - init.ts
 import { copyFile, access } from 'node:fs/promises';
 import path from 'node:path';
 
