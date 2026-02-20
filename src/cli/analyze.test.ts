@@ -1,4 +1,3 @@
-// WIP: Initial module design - analyze.test.ts
 import { describe, expect, it, vi } from 'vitest';
 import { runAnalyze, type AnalyzeDependencies } from './analyze.js';
 import type {
