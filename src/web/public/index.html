@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Architecture Reviewer</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">◆</span>
+        <span class="brand-name">Architecture&nbsp;Reviewer</span>
+      </div>
+      <p class="brand-tagline">AI-powered impact analysis for your codebase, on Gemini's free tier</p>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel form-panel" aria-labelledby="form-heading">
+      <h2 id="form-heading">Run an analysis</h2>
+
+      <form id="analyze-form" novalidate>
+        <label class="field">
+          <span class="field-label">Repository path</span>
+          <input
+            type="text"
+            id="repo-input"
+            name="repo"
+            placeholder="C:\path\to\your\project"
+            autocomplete="off"
+            spellcheck="false"
+            required
+          />
+          <span class="field-hint">A local folder — the analyzer walks it directly.</span>
+        </label>
+
+        <label class="field">
+          <span class="field-label">Proposed change</span>
+          <textarea
+            id="proposal-input"
+            name="proposal"
+            rows="4"
+            placeholder="e.g. Add a real-time chat feature between users, backed by WebSockets"
+            required
+          ></textarea>
+          <span class="field-hint">Describe the feature in plain English.</span>
+        </label>
+
+        <label class="field">
+          <span class="field-label">Output directory <span class="field-optional">optional</span></span>
+          <input type="text" id="out-input" name="out" placeholder="./output" autocomplete="off" spellcheck="false" />
+        </label>
+
+        <button type="submit" id="submit-btn" class="btn btn-primary">
+          <span class="btn-label">Analyze architecture</span>
+          <span class="btn-spinner" aria-hidden="true"></span>
+        </button>
+
+        <p id="form-error" class="form-error" hidden role="alert"></p>
+      </form>
+
+      <div id="progress" class="progress" hidden aria-live="polite">
+        <h3 class="progress-heading">Progress</h3>
+        <ol id="progress-steps" class="steps"></ol>
+        <details class="log-details">
+          <summary>Show live log</summary>
+          <pre id="progress-log" class="log"></pre>
+        </details>
+      </div>
+    </section>
+
+    <section class="panel results-panel" aria-labelledby="results-heading">
+      <h2 id="results-heading">Impact report</h2>
+
+      <div id="empty-state" class="empty-state">
+        <div class="empty-icon" aria-hidden="true">▤</div>
+        <p>Run an analysis to see the architecture impact report here.</p>
+      </div>
+
+      <div id="error-banner" class="error-banner" hidden role="alert"></div>
+
+      <article id="results" class="results" hidden>
+        <section class="result-block" id="block-summary">
+          <h3>Summary</h3>
+          <p id="summary-text"></p>
+          <p class="source-paths" id="source-paths"></p>
+        </section>
+
+        <section class="result-block" id="block-components">
+          <h3>Affected components</h3>
+          <div class="table-scroll"><table class="data-table"><thead><tr><th>Component</th><th>Reason</th></tr></thead><tbody id="components-body"></tbody></table></div>
+        </section>
+
+        <section class="result-block" id="block-apis">
+          <h3>Affected APIs</h3>
+          <div class="table-scroll"><table class="data-table"><thead><tr><th>Endpoint</th><th>Impact</th></tr></thead><tbody id="apis-body"></tbody></table></div>
+        </section>
+
+        <section class="result-block" id="block-db">
+          <h3>Database changes</h3>
+          <div class="table-scroll"><table class="data-table"><thead><tr><th>Description</th><th>Migration notes</th></tr></thead><tbody id="db-body"></tbody></table></div>
+        </section>
+
+        <section class="result-block" id="block-new-components">
+          <h3>New components</h3>
+          <div class="table-scroll"><table class="data-table"><thead><tr><th>Component</th><th>Purpose</th></tr></thead><tbody id="new-components-body"></tbody></table></div>
+        </section>
+
+        <section class="result-block" id="block-scalability">
+          <h3>Scalability risks</h3>
+          <ul class="risk-list" id="scalability-list"></ul>
+        </section>
+
+        <section class="result-block" id="block-security">
+          <h3>Security concerns</h3>
+          <ul class="risk-list" id="security-list"></ul>
+        </section>
+
+        <section class="result-block" id="block-steps">
+          <h3>Recommended steps</h3>
+          <ol class="steps-list" id="steps-list"></ol>
+        </section>
+
+        <section class="result-block" id="block-diagrams">
+          <h3>Diagrams</h3>
+          <div id="diagrams"></div>
+        </section>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Runs entirely on your machine, using Google Gemini's free tier. No data leaves your network except the code excerpts sent to Gemini for analysis.</p>
+  </footer>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
