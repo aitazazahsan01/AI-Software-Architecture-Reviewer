@@ -1,4 +1,3 @@
-// WIP: Initial module design - app.js
 const MERMAID_CDN_URL = 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
 
 const STAGES = [
