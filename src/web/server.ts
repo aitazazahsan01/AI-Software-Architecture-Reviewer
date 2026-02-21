@@ -1,4 +1,3 @@
-// WIP: Initial module design - server.ts
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import express, { type Express, type Request, type Response } from 'express';
