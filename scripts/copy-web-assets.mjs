@@ -1,4 +1,3 @@
-// WIP: Initial module design - copy-web-assets.mjs
 import { cpSync, existsSync } from 'node:fs';
 
 // tsc only compiles .ts files, so the static frontend (html/css/js) under
