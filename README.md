@@ -1,5 +1,3 @@
-# WIP: Draft version of README.md
-
 <div align="center">
 
 # Architecture Reviewer
