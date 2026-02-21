@@ -1,4 +1,3 @@
-// WIP: Initial module design - server.test.ts
 import request from 'supertest';
 import { describe, expect, it, vi } from 'vitest';
 import { createServer } from './server.js';
