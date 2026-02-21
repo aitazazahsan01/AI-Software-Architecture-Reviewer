@@ -1,5 +1,3 @@
-# WIP: Draft version of IMPLEMENTATION_PLAN.md
-
 # Implementation Plan
 
 Tracks phases, ownership, and status. See [ARCHITECTURE.md](./ARCHITECTURE.md) for
